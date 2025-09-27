@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Skin Spa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="text-center py-3">
+        <img src="images/logo-main.jpeg" alt="Beauty Skin Spa Logo" class="logo">
+    </header>
+
+    <main>
+        <section class="hero">
+            <video autoplay loop muted playsinline class="hero-video">
+                <source src="videos/microblanding.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content text-center text-white">
+                <h1 class="display-4">Transforma tu Piel, Realza tu Belleza</h1>
+                <p class="lead">Tratamientos de cosmetología y micropigmentación de vanguardia.</p>
+                <a href="#servicios" class="btn btn-outline-light btn-lg me-2">Descubre Tratamientos</a>
+                <a href="https://wa.me/526674037755" target="_blank" class="btn btn-primary btn-lg">Agenda por WhatsApp</a>
+            </div>
+        </section>
+
+        <section id="servicios" class="servicios py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Descubre tu Tratamiento</h2>
+                <div class="row">
+                    <!-- Rostro Card -->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <div class="service-card" style="background-image: url('images/rostro.jpeg')" data-bs-toggle="modal" data-bs-target="#rostroModal">
+                            <div class="service-card-overlay">
+                                <h3>Rostro</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Micropigmentación Card -->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <div class="service-card" style="background-image: url('images/micropigmentacion.jpeg')" data-bs-toggle="modal" data-bs-target="#pmuModal">
+                            <div class="service-card-overlay">
+                                <h3>Micropigmentación</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cuerpo Card -->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <div class="service-card" style="background-image: url('images/cuerpo.png')" data-bs-toggle="modal" data-bs-target="#cuerpoModal">
+                            <div class="service-card-overlay">
+                                <h3>Cuerpo</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Nuestros Resultados y Experiencias</h2>
+                <div id="resultsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#resultsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#resultsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#resultsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#resultsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#resultsCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#resultsCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/result-lips.jpeg" class="d-block w-100 rounded shadow" alt="Resultado Labios">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/result-derma.jpeg" class="d-block w-100 rounded shadow" alt="Resultado Dermafacial">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/result-facial1.jpeg" class="d-block w-100 rounded shadow" alt="Resultado Facial">
+                        </div>
+                        <div class="carousel-item">
+                            <video class="d-block w-100 rounded shadow" autoplay loop muted playsinline>
+                                <source src="videos/acuarle-lips.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                        <div class="carousel-item">
+                            <video class="d-block w-100 rounded shadow" autoplay loop muted playsinline>
+                                <source src="videos/cuerpo-treatment.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                        <div class="carousel-item">
+                            <video class="d-block w-100 rounded shadow" autoplay loop muted playsinline>
+                                <source src="videos/facial-treatment.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#resultsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#resultsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact py-5">
+            <div class="container text-center">
+                <h2 class="mb-4">Síguenos</h2>
+                <p>Sigue nuestro trabajo y agenda tu cita a través de Instagram o WhatsApp.</p>
+                <a href="https://www.instagram.com/beautyskinbcpmu?igsh=NmI1NnNnNGgxeG5y" target="_blank" class="btn btn-secondary btn-lg">Visita nuestro Instagram</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2025 Beauty Skin Spa. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/526674037755" class="whatsapp-float" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Modals -->
+    <!-- Rostro Modal -->
+    <div class="modal fade" id="rostroModal" tabindex="-1" aria-labelledby="rostroModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rostroModalLabel">Tratamientos Faciales</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Tratamientos Estrella</h6>
+                    <ul>
+                        <li>Limpieza Facial Profunda</li>
+                        <li>Dermapen (Renovación de piel, colágeno, manchas y arrugas)</li>
+                        <li>Fibroblast (Plasma pen para arrugas y secuelas de acné)</li>
+                        <li>Tratamiento Anti-envejecimiento Regenerante</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PMU Modal -->
+    <div class="modal fade" id="pmuModal" tabindex="-1" aria-labelledby="pmuModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pmuModalLabel">Micropigmentación (PMU)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Técnicas de Precisión</h6>
+                    <ul>
+                        <li><strong>Cejas:</strong> Microblading y Microshading.</li>
+                        <li><strong>Labios:</strong> Acuarela LIPS y Russian LIPS.</li>
+                        <li><strong>Ojos:</strong> Delineado clásico y sombreado.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cuerpo Modal -->
+    <div class="modal fade" id="cuerpoModal" tabindex="-1" aria-labelledby="cuerpoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cuerpoModalLabel">Tratamientos Corporales</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Bienestar y Cuidado</h6>
+                    <ul>
+                        <li><strong>Reductivos:</strong> Cavitación, Radiofrecuencia y Lipo Láser.</li>
+                        <li><strong>Masajes:</strong> Relajante y Descontracturante.</li>
+                        <li><strong>Cuidado de la piel:</strong> Micropuntura para estrías y cicatrices.</li>
+                        <li><strong>Depilación con Cera.</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Animation Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.servicios, .gallery, .contact');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Carousel Video Playback
+            const resultsCarousel = document.getElementById('resultsCarousel');
+            if (resultsCarousel) {
+                resultsCarousel.addEventListener('slid.bs.carousel', function (event) {
+                    const carouselItems = resultsCarousel.querySelectorAll('.carousel-item');
+                    carouselItems.forEach(item => {
+                        const video = item.querySelector('video');
+                        if (video) {
+                            video.pause();
+                            video.currentTime = 0; // Reset video to start
+                        }
+                    });
+
+                    const activeItem = event.relatedTarget;
+                    const activeVideo = activeItem.querySelector('video');
+                    if (activeVideo) {
+                        activeVideo.play();
+                    }
+                });
+
+                // Play video on initial load if the first item is a video
+                const firstItemVideo = resultsCarousel.querySelector('.carousel-item.active video');
+                if (firstItemVideo) {
+                    firstItemVideo.play();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
